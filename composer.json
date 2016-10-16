@@ -1,0 +1,9 @@
+{
+    "name": "acty/classifieds-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Acty\\ClassifiedsModule\\": "src/"
+        }
+    }
+}
