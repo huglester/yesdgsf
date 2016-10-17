@@ -1,13 +1,13 @@
 <?php namespace Acty\ClassifiedsModule\Http\Controller\Admin;
 
 use Acty\ClassifiedsModule\Advert\AdvertRepository;
-use Acty\ClassifiedsModule\Advert\Command\AddAdvertFormFromAdvert;
-use Acty\ClassifiedsModule\Advert\Command\AddAdvertFormFromRequest;
-use Acty\ClassifiedsModule\Advert\Command\AddEntryFormFromAdvert;
-use Acty\ClassifiedsModule\Advert\Command\AddEntryFormFromRequest;
 use Acty\ClassifiedsModule\Advert\Command\AddFormsFromRequest;
 use Acty\ClassifiedsModule\Advert\Form\AdvertEntryFormBuilder;
 use Acty\ClassifiedsModule\Advert\Form\AdvertFormBuilder;
+use Acty\ClassifiedsModule\Advert\Form\Command\AddAdvertFormFromAdvert;
+use Acty\ClassifiedsModule\Advert\Form\Command\AddAdvertFormFromRequest;
+use Acty\ClassifiedsModule\Advert\Form\Command\AddEntryFormFromAdvert;
+use Acty\ClassifiedsModule\Advert\Form\Command\AddEntryFormFromRequest;
 use Acty\ClassifiedsModule\Advert\Table\AdvertTableBuilder;
 use Acty\ClassifiedsModule\Entry\Form\EntryFormBuilder;
 use Acty\ClassifiedsModule\Type\TypeRepository;

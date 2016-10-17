@@ -18,5 +18,14 @@ return [
     ],
     'type' => [
         'name' => 'Type'
+    ],
+    'image' => [
+        'name' => 'Image',
+    ],
+    'gallery' => [
+        'name' => 'Gallery'
+    ],
+    'files' => [
+        'name' => 'Files'
     ]
 ];

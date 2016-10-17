@@ -15,6 +15,11 @@ class AdvertModel extends ClassifiedsAdvertsEntryModel implements AdvertInterfac
         return $this->type;
     }
 
+    public function getEntryId()
+    {
+        return $this->entry_id;
+    }
+
     public function getStrId() 
     {
         return $this->str_id;

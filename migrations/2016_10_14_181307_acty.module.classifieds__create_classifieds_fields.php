@@ -14,6 +14,9 @@ class ActyModuleClassifiedsCreateClassifiedsFields extends Migration
     protected $fields = [
         'name' => 'anomaly.field_type.text',
         'description' => 'anomaly.field_type.text',
+        'image' => 'anomaly.field_type.file',
+        'gallery' => 'anomaly.field_type.files',
+        'files' => 'anomaly.field_type.files',
         'slug' => [
             'type' => 'anomaly.field_type.slug',
             'config' => [

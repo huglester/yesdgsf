@@ -28,6 +28,13 @@ class ActyModuleClassifiedsCreateAdvertsStream extends Migration
             'translatable' => true,
             'required' => true
         ],
+        'description' => [
+            'translatable' => true,
+            'required' => true
+        ],
+        'image',
+        'gallery',
+        'files',
         'type' => [
             'required' => true
         ],

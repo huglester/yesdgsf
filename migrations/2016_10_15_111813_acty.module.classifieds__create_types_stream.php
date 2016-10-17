@@ -27,7 +27,9 @@ class ActyModuleClassifiedsCreateTypesStream extends Migration
             'required' => true,
             'translatable' => true
         ],
-        'description',
+        'description' => [
+            'translatable' => true
+        ],
         'slug' => [
             'required' => true
         ]

@@ -7,6 +7,11 @@ use Anomaly\Streams\Platform\Ui\Form\Multiple\MultipleFormBuilder;
 
 class AdvertEntryFormBuilder extends MultipleFormBuilder
 {
+    /**
+     * Fired on saved entry
+     *
+     * @param \Acty\ClassifiedsModule\Entry\Form\EntryFormBuilder $builder
+     */
     public function onSavedEntry(EntryFormBuilder $builder)
     {
         $form = $this->forms->get('advert');
@@ -15,14 +20,7 @@ class AdvertEntryFormBuilder extends MultipleFormBuilder
 
         $entry = $builder->getFormEntry();
 
-        $advert->entry_id   = $entry->getId();
+        $advert->entry_id = $entry->getId();
         $advert->entry_type = get_class($entry);
-    }
-
-    public function getContextualId()
-    {
-        $form = $this->forms->get('advert');
-
-        return $form->getContextualId();
     }
 }

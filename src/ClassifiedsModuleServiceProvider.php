@@ -54,7 +54,16 @@ class ClassifiedsModuleServiceProvider extends AddonServiceProvider
 
     protected $providers = [];
 
-    protected $singletons = [];
+    protected $singletons = [
+        'Acty\ClassifiedsModule\Advert\Contract\AdvertInterface' =>
+            'Acty\ClassifiedsModule\Advert\AdvertModel',
+        'Acty\ClassifiedsModule\Advert\Contract\AdvertRepositoryInterface' =>
+            'Acty\ClassifiedsModule\Advert\AdvertRepository',
+        'Acty\ClassifiedsModule\Type\Contract\TypeInterface' =>
+            'Acty\ClassifiedsModule\Type\TypeModel',
+        'Acty\ClassifiedsModule\Type\Contract\TypeRepositoryInterface' =>
+            'Acty\ClassifiedsModule\Type\TypeRepository'
+    ];
 
     protected $overrides = [];
 

@@ -2,7 +2,7 @@
 
 namespace Acty\ClassifiedsModule\Http\Controller\Admin;
 
-use Acty\ClassifiedsModule\Type\TypeRepository;
+use Acty\ClassifiedsModule\Type\Contract\TypeRepositoryInterface;
 use Anomaly\Streams\Platform\Assignment\Form\AssignmentFormBuilder;
 use Anomaly\Streams\Platform\Assignment\Table\AssignmentTableBuilder;
 use Anomaly\Streams\Platform\Field\Contract\FieldRepositoryInterface;
@@ -14,7 +14,7 @@ class AssignmentsController extends AdminController
 {
     public function index(
         AssignmentTableBuilder $table,
-        TypeRepository $type,
+        TypeRepositoryInterface $type,
         BreadcrumbCollection $breadcrumbs,
         $id
     ) {
@@ -28,7 +28,7 @@ class AssignmentsController extends AdminController
         return $table->setStream($type->getEntryStream())->render();
     }
 
-    public function create(FieldRepositoryInterface $fields, TypeRepository $type, $id)
+    public function create(FieldRepositoryInterface $fields, TypeRepositoryInterface $type, $id)
     {
         $type = $type->find($id);
 
@@ -46,7 +46,7 @@ class AssignmentsController extends AdminController
 
     public function store(
         AssignmentFormBuilder $form,
-        TypeRepository $type,
+        TypeRepositoryInterface $type,
         FieldRepositoryInterface $fields,
         $id,
         $field

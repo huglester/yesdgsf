@@ -1,6 +1,6 @@
 <?php namespace Acty\ClassifiedsModule\Advert\Form;
 
-use Acty\ClassifiedsModule\Type\TypeModel;
+use Acty\ClassifiedsModule\Type\Contract\TypeInterface;
 use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 
 class AdvertFormBuilder extends FormBuilder
@@ -88,7 +88,7 @@ class AdvertFormBuilder extends FormBuilder
         return $this->type;
     }
 
-    public function setType(TypeModel $type)
+    public function setType(TypeInterface $type)
     {
         $this->type = $type;
         
